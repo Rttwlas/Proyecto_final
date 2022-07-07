@@ -1,0 +1,26 @@
+{% extends "AppBazar/padre.html" %} {% load static %} {% block container %}
+
+<section>
+    <h2 class="display-4 fw-bolder text-center p-3"> Ingrese aqui el encargue</h2>
+    <article class="row form-px">
+
+        <img src="https://irp-cdn.multiscreensite.com/8e2913a3/MOBILE/jpg/1855143-marken-regalos-articulos-exhibidos.jpg">
+
+        <form action="" method="POST" class="col col-sm-12 col-lg-6 form-rg ">{% csrf_token %}
+
+            <div class="form-list">
+                {{ miFormulario1.as_p}}
+            </div>
+
+            {% if miForm.errors %}
+            <p class="text-danger fw-bolder">Por favor ingrese datos validos.</p>
+            {% endif %}
+
+            <button type="submit" class="btn btn-primary mt-3">Enviar pedido</button>
+
+        </form>
+
+    </article>
+</section>
+
+{% endblock %}
