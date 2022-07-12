@@ -1,0 +1,103 @@
+{% extends "AppBazar/padre.html" %} {% load static %} {% block container %}
+
+
+<!-- Header-->
+<header class="bg-dark py-5">
+    
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="text-center text-white">
+            <link type="image/x-icon" href="{%static 'https://www.memo.com.ar/files/image/27/27752/6194d92a6f1e6.png'%}" rel="icon" />
+            <h1 class="display-4 fw-bolder">Bazar "Todo x 2 pesos"</h1>
+            <p class="lead fw-normal text-white-50 mb-0">Ofertas increibles, se aceptan todas las tarjetas de creditos.</p>
+        </div>
+    </div>
+</header>
+
+<!--carousel-->
+
+<section class="about bg-dark ">
+
+    <article class=" about-info  ">
+        <h2 class="text-white fw-bolder">Sobre Nosotros</h2>
+        <p class="text-white fw-bolder"> Este es un local fundado en 1980 por mi familia, donde pusimos lo mejor de generacion en generacion, dedicandole tiempo y amor.</p>
+    </article>
+
+    <article id="carouselExampleCaptions" class="carousel slide about-slider" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://setabazar.com.ar/wp-content/uploads/2022/03/Seta-Bazar-07-1024x684.jpg" class="d-block w-100" alt="Jarron Prehistorico">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white text-sh  fw-bolder">Se vende fondo de comercio</h5>
+                    <p class="text-white text-sh  fw-bolder">Contactanos.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipPIjLYtCAWciE0IUiY4oLbsZZ8kGQdEAxYESda4=w768-h768-n-o-v1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white text-sh  fw-bolder">Bazar Daiu</h5>
+                    <p class="text-white text-sh  fw-bolder"> Consulte stock por mayor y menor.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.estilosdeco.com/2022/01/bazares-online-argentina.jpg" class="d-block w-100" alt="masa casera">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-white text-sh  fw-bolder">Gran variedad de bazares</h5>
+                    <p class="text-white  text-sh fw-bolder">Estilo retro, rustico, modernos, etc!!!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </article>
+
+
+</section>
+
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="display-4 fw-bolder text-center p-3">Productos populares</h2>
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+
+            {% if bazar %} {% for bazar in bazar %}
+
+            <div class="col mb-5 card-ancho ">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="{{bazar.foto}}" alt="{{bazar.nombre}}" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{bazar.nombre}}</h5>
+                            <!-- Product price-->
+
+
+                            <b>Precio: ${{bazar.precio}}</b>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View options</a></div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %} {% endif %}
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}
