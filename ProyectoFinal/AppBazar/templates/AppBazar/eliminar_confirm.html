@@ -1,0 +1,40 @@
+{% extends "AppBazar/padre.html" %} {% load static %} {% block container %}
+
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <h2 class="display-4 fw-bolder text-center p-3">Borrar articulo de bazar</h2>
+
+
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center form-px">
+
+            {% if bazar %}
+
+            <div class="col mb-5 card-ancho ">
+                <div class="card h-100">
+                    <!-- Product image-->
+                    <img class="card-img-top" src="{{bazar.foto}}" alt="{{bazar.nombre}}" />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{bazar.nombre}}</h5>
+                            <!-- Product price-->
+                            <b>Precio: ${{bazar.precio}}</b>
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <!------------------------------------------------------------------------------------------------------------->
+                        <form method="post">{% csrf_token %} ¿Estás seguro que deseas borrar este articulo "{{ object.nombre }}"?
+                            <input type="submit" value="¡Si! " />
+                        </form>
+                        <button class="enlace" class="text-center" class="btn btn-outline-dark mt-auto" role="link" onclick="window.location='../bazar'">Cancelar</button>
+                        <!------------------------------------------------------------------------------------------------------------>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}

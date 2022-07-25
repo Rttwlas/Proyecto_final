@@ -1,0 +1,42 @@
+{% extends "AppBazar/padre.html" %} {% load static %} {% block container %}
+
+<section>
+    <h2 class="display-4 fw-bolder text-center p-3"> Nosotros  </h2>
+    <article class="row form-px">
+        <img src="https://wellaggio.com/wp-content/uploads/2015/03/redes-sociales.png">
+
+        
+        <h1>WhatsApp</h1>
+        <p>11-12345623</p>
+
+        <h1>Mail</h1>
+        <p>bazarEnzo@gmail.com</p>
+
+        <h1>Direccion</h1>
+        <p>Av. Siempre Viva, Springfield</p>    
+
+    </article>
+</section>
+<footer>
+    <h2 class="display-4 fw-bolder text-center p-3"> Postulacion Laboral</h2>
+    <article class="row form-px">
+
+        <form action="" method="POST" class="col col-sm-12 col-lg-6 form-rg ">{% csrf_token %}
+
+            <div class="form-list">
+                {{ miFormulario.as_p}}
+            </div>
+
+            {% if miForm.errors %}
+            <p class="text-danger fw-bolder">Por favor ingrese datos validos.</p>
+            {% endif %}
+
+            <button type="submit" class="btn btn-primary mt-3">Quiero contactar</button>
+
+        </form>
+
+    </article>
+</footer>
+
+
+{% endblock %}
