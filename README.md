@@ -24,8 +24,8 @@ Archivo donde está la configuración de rutas para las Vistas del Porfolio.
 En esta carpeta encontraras todos los HTML configurados para el funcionamiento y visualización de la APP. en todos se utilizo Herencia por Django y manejo de datos.
 
 # Autor
-Quiroga, Maximiliano
--Estudiante de Ing. en Electronica (orientacion en Redes)
--Tecnico Superior en Energía (orientacion industrial)
--Tecnico en Electrónica
-LinkedIn : https://www.linkedin.com/in/maximiliano-quiroga-711b9b219
+@ Quiroga, Maximiliano
+@Estudiante de Ing. en Electronica (orientacion en Redes)
+@Tecnico Superior en Energía (orientacion industrial)
+@Tecnico en Electrónica
+@LinkedIn : https://www.linkedin.com/in/maximiliano-quiroga-711b9b219
