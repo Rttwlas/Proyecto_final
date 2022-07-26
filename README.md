@@ -3,10 +3,13 @@ ENTREGA DEL PROYECTO FINAL.-
 
 Esta es una Página Web ---- >>> "Bazar Enzo". 
 Lo hice con el proposito personal, para darle utilidad en un emprendimiento familiar, y para poder practicar mas en profundidad este hermoso mundo de la programación.
-
+ 
 # Documentacion
 Este es un proyecto, planteado por CODERHOUSE donde la idea de la entrega es implementar lo aprendido en la cursada de PYTHON.
 Donde utilizamos el framework de Django, y templates provenientes de Bootstrap para darle un buen formato a la APP, ya que el fuerte nuestro no es el front-end, sino el backend.Adaptamos esta visualizacion usando la herencia de padre a hijo para altenar las diferentes vistas.
+
+# Video del programa en funcionamiento
+https://www.youtube.com/watch?v=-mHD_b5CJD8
 
 # models.py
 En este archivo se encuentra los modelos de datos usado para el backend del ingreso de stock al bazar, busqueda laboral, y pedidos por encargue. Tambien se encuentra el @models.py/ bazar donde se encuentra todo lo agregado desde la web o la bd.
