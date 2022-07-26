@@ -5,7 +5,7 @@ Esta es una Página Web ---- >>> "Bazar Enzo".
 Lo hice con el proposito personal, para darle utilidad en un emprendimiento familiar, y para poder practicar mas en profundidad este hermoso mundo de la programación.
 
 # Documentacion
-Este es un proyecto, planteado por CODERHOUSE donde la idea la entrega es implementar lo aprendido en la cursada de PYTHON.
+Este es un proyecto, planteado por CODERHOUSE donde la idea de la entrega es implementar lo aprendido en la cursada de PYTHON.
 Donde utilizamos el framework de Django, y templates provenientes de Bootstrap para darle un buen formato a la APP, ya que el fuerte nuestro no es el front-end, sino el backend.Adaptamos esta visualizacion usando la herencia de padre a hijo para altenar las diferentes vistas.
 
 # models.py
