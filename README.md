@@ -12,13 +12,13 @@ Donde utilizamos el framework de Django, y templates provenientes de Bootstrap p
 https://www.youtube.com/watch?v=-mHD_b5CJD8
 
 # Usuarios y contraseñas para la prueba del programa
-User Administrador = Max5
+User Administrador = Max5  -----
 Pass Administrador = asd
 
-User con permisos = Daiu
+User con permisos = Daiu   -----
 Pass con permisos = OrfeO0620
-
-User normal (cliente) = Mateo
+ 
+User normal (cliente) = Mateo -----
 Pass normal (cliente) = OrfeO0620
 
 # models.py
