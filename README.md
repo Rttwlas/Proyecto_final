@@ -11,6 +11,16 @@ Donde utilizamos el framework de Django, y templates provenientes de Bootstrap p
 # Video del programa en funcionamiento
 https://www.youtube.com/watch?v=-mHD_b5CJD8
 
+# Usuarios y contraseñas para la prueba del programa
+User Administrador = Max5
+Pass Administrador = asd
+
+User con permisos = Daiu
+Pass con permisos = OrfeO0620
+
+User normal (cliente) = Mateo
+Pass normal (cliente) = OrfeO0620
+
 # models.py
 En este archivo se encuentra los modelos de datos usado para el backend del ingreso de stock al bazar, busqueda laboral, y pedidos por encargue. Tambien se encuentra el @models.py/ bazar donde se encuentra todo lo agregado desde la web o la bd.
 
